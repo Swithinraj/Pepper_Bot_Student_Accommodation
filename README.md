@@ -1,6 +1,6 @@
 ## Install Rasa
 
-## The first step is to install Rasa. You can do this by running the following command in your terminal:
+## The first step is to install Rasa. We can do it by running the following command in the terminal:
 
   ```bash
   $ sudo apt update
