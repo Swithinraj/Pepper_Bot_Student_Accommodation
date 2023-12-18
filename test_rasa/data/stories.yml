@@ -1,0 +1,48 @@
+version: "3.1"
+
+stories:
+- story: apply for dormitory
+  steps:
+  - intent: apply_dormitory
+  - action: utter_apply_dormitory
+
+- story: apply for internship housing
+  steps:
+  - intent: apply_intern
+  - action: utter_apply_intern
+
+- story: provide forms information
+  steps:
+  - intent: forms_info
+  - action: utter_forms_info
+
+- story: explain dorm basic set
+  steps:
+  - intent: dorm_basic_set
+  - action: utter_dorm_basic_set
+
+- story: inquire about furnished rooms
+  steps:
+  - intent: furnished_rooms
+  - action: utter_furnished_rooms
+
+- story: office hours inquiry
+  steps:
+  - intent: office_hours
+  - action: utter_office_hours
+
+- story: ask about rental prices
+  steps:
+  - intent: rental_prices
+  - action: utter_rental_prices
+
+- story: utilities included in rent
+  steps:
+  - intent: utilities_included
+  - action: utter_utilities_included
+
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
