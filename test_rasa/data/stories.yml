@@ -1,0 +1,100 @@
+version: "3.1"
+
+stories:
+- story: apply for dormitory
+  steps:
+  - intent: apply_dormitory
+  - action: utter_apply_dormitory
+
+- story: apply for internship housing
+  steps:
+  - intent: apply_intern
+  - action: utter_apply_intern
+
+- story: provide forms information
+  steps:
+  - intent: forms_info
+  - action: utter_forms_info
+
+- story: explain dorm basic set
+  steps:
+  - intent: dorm_basic_set
+  - action: utter_dorm_basic_set
+
+- story: inquire about furnished rooms
+  steps:
+  - intent: furnished_rooms
+  - action: utter_furnished_rooms
+
+- story: office hours inquiry
+  steps:
+  - intent: office_hours
+  - action: utter_office_hours
+
+- story: ask about rental prices
+  steps:
+  - intent: rental_prices
+  - action: utter_rental_prices
+
+- story: utilities included in rent
+  steps:
+  - intent: utilities_included
+  - action: utter_utilities_included
+
+
+- story: initiate_preference_collection
+  steps:
+  - intent: ask_accommodation
+  - action: utter_ask_preferences
+  - slot_was_set:
+    - location: null
+    - budget: null
+    - size: null
+    - transport: null
+    - dist: null
+    - clubs: null
+  - action: utter_ask_location
+
+- story: ask_location_preference
+  steps:
+  - intent: location
+  - slot_was_set:
+    - location: "sankt_augustin"
+  - action: utter_ask_budget
+
+- story: ask_budget_preference
+  steps:
+  - intent: budget
+  - slot_was_set:
+    - budget: "affordable"
+  - action: utter_ask_size
+
+- story: ask_size_preference
+  steps:
+  - intent: size
+  - slot_was_set:
+    - size: "medium"
+  - action: utter_ask_transport
+
+- story: ask_transport_preference
+  steps:
+  - intent: transport
+  - slot_was_set:
+    - transport: "sbahn"
+  - action: utter_ask_distance
+
+- story: ask_distance_preference
+  steps:
+  - intent: distance
+  - slot_was_set:
+    - dist: "near"
+  - action: utter_ask_clubs
+
+- story: ask_clubs_preference
+  steps:
+  - intent: clubs_interest
+  - slot_was_set:
+    - clubs: "literature"
+  - action: action_infer_accommodation
+
+

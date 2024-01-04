@@ -1,0 +1,102 @@
+version: "3.1"
+
+nlu:
+- intent: apply_dormitory
+  examples: |
+    - How can I apply for a dormitory?
+    - What is the process for applying to live in a dormitory?
+    - Can you help me with the dormitory application?
+    - I want to apply for a dorm, how do I do that?
+
+- intent: apply_intern
+  examples: |
+    - How do I apply for an internship housing?
+    - What's the procedure for intern accommodation?
+    - I need a room for my internship, how can I apply?
+    - Where can I find housing for my internship?
+
+- intent: forms_info
+  examples: |
+    - Where can I find the necessary forms?
+    - Do you have any forms for accommodation?
+    - How can I get the Dorm Basic Set forms?
+
+- intent: dorm_basic_set
+  examples: |
+    - What is the Dorm Basic Set?
+    - Can you explain the Dorm Basic Set offer?
+    - Where can I find information about the Dorm Basic Set?
+
+- intent: furnished_rooms
+  examples: |
+    - What furniture is provided in the rooms?
+    - How are the rooms in the dorms furnished?
+    - Can you tell me about the room furnishings?
+
+- intent: office_hours
+  examples: |
+    - When are the office hours of the administration?
+    - What are the opening times of the Student Housing Department?
+    - Can I know the hours the administration is available?
+
+- intent: rental_prices
+  examples: |
+    - How much does it cost to rent a room?
+    - What are the rental prices for accommodation?
+    - Can you give me an idea about the rental prices?
+
+- intent: utilities_included
+  examples: |
+    - Are utilities included in the rent?
+    - Does the rent cover utilities like internet and water?
+    - What additional costs are covered in the rent?
+
+- intent: location
+  examples: |
+    - [Bonn](location)
+    - [Rheinbach](location)
+    - [Sankt Augustin](location)
+
+- intent: budget
+  examples: |
+    - [expensive](budget)
+    - [affordable](budget)
+
+- intent: size
+  examples: |
+    - [small](size)
+    - [medium](size)
+    - [large](size)
+
+- intent: transport
+  examples: |
+    - [tram](transport)
+    - [bus](transport)
+    - [fahrrad](transport)
+
+- intent: distance
+  examples: |
+    - [near](dist)
+    - [far](dist)
+
+- intent: clubs_interest
+  examples: |
+    - [literature](clubs)
+    - [sports](clubs)
+    - [dance](clubs)
+    - [gaming](clubs)
+
+- intent: clubs_interest
+  examples: |
+    - [literature](clubs)
+    - [sports](clubs)
+    - [dance](clubs)
+    - [gaming](clubs)
+
+- intent: ask_accommodation
+  examples: |
+    - which is the best accommodation for me?
+    - which accommodation with suit me?
+    - I need a good student accommodation.
+    - Find me a dorm.
+    - Get me a dorm.
